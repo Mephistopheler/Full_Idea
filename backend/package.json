@@ -1,0 +1,28 @@
+{
+  "name": "@fullstack_project/backend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "ts-node-dev --rs ./src/index.ts",
+    "build": "rimraf ./dist && tsc --build ./tsconfig.json",
+    "start": "node ./dist/index.js",
+    "prettify": "prettier --log-level log --ignore-path ./.prettierignore --cache --write '{src/**/*,*}.{ts,tsx,js,json,yml,scss}'"
+  },
+
+  "dependencies": {
+    "@trpc/server": "^11.0.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.10",
+    "express": "4.18.2",
+    "nvm": "^0.0.4",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
